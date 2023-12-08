@@ -1,4 +1,4 @@
-package IK.files;
+package goit.homeworks;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -16,12 +16,15 @@ import java.util.regex.Pattern;
 public class Main {
 
     public static void main(String[] args) {
-        var validNumbers = defineValidPhoneNumbersFromFile("./src/main/java/IK/files/numbers.txt");
+        // TASK 1
+        var validNumbers = defineValidPhoneNumbersFromFile("./src/main/java/goit/homeworks/numbers.txt");
         validNumbers.forEach(System.out::println);
 
-        writeUsersToJsonFile("./src/main/java/IK/files/users.txt", "./src/main/java/IK/files/users.json");
+        // TASK 2
+        writeUsersToJsonFile("./src/main/java/goit/homeworks/users.txt", "./src/main/java/goit/homeworks/users.json");
 
-        countWordFrequency("./src/main/java/IK/files/words.txt");
+        // TASK 3
+        countWordFrequency("./src/main/java/goit/homeworks/words.txt");
     }
 
     public static void countWordFrequency(String fileName) {

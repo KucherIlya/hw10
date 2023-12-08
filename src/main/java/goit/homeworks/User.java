@@ -1,4 +1,4 @@
-package IK.files;
+package goit.homeworks;
 
 public class User {
 
